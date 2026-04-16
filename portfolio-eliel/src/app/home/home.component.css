@@ -3,10 +3,11 @@
  .banner {
      display: flex;
      justify-content: center;
-     background: linear-gradient(180 deg, var(--color-blue-2)15%, var (--color-blue-3)100%);
+     background: linear-gradient(180deg, var(--color-blue-2)15%, var(--color-blue-3)100%);
      color: #fff;
-     padding-top: 70px;
+     padding-top: 90px;
      text-align: center;
+     min-height: 100vh;
  }
 
  .banner .box {
@@ -16,7 +17,7 @@
      padding: 45px 5px;
  }
 
- .banner .box .paragreph {
+ .banner .box .paragraph {
      margin: 15px 0;
      font-size: var(--font-size-5);
      font-weight: 400;
@@ -24,7 +25,7 @@
  }
 
  .banner .box .title1 {
-     font-size: var(--font-size-1);
+     font-size: var(--font-size-3);
  }
 
  .banner .box .title2 {
@@ -35,67 +36,170 @@
 
  .banner .box .buttons {
 
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 15px 0; 
-    width: 100%;
-    justify-content:space-evenly;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     margin: 15px 0;
+     width: 100%;
+     justify-content: space-evenly;
  }
 
  .banner .box .buttons a {
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    padding: 15px;
-    min-width:170px;
-    border-radius: 35px;
-    margin: 0 5px 15px;
-    font-size: var(--font-size-4);
-    font-weight: 700;
-    background: var(--color-blue-1);
-    color:#fff;
-    text-wrap: nowrap;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 15px;
+     min-width: 170px;
+     border-radius: 35px;
+     margin: 0 5px 15px;
+     font-size: var(--font-size-4);
+     font-weight: 700;
+     background: var(--color-blue-1);
+     color: #fff;
+     text-wrap: nowrap;
  }
 
- .banner .box .buttons:hover{
-    background-color:var(--color-blue-2);
+ .banner .box .buttons a:hover {
+     background-color: var(--color-blue-2);
  }
- .banner .box .buttons i{
 
-    margin-right: 5px;
+ .banner .box .buttons i {
+
+     margin-right: 5px;
  }
 
  /* box about*/
 
- .about .box{
-    display: flex;
-    flex-direction: column;
+ .about .box {
+
+     display: flex;
+     align-items: center;
+     gap: 40px;
+     flex-direction: column;
+ }
+
+ .about .box .img {
+     flex: 1;
+     margin: 0 auto 20px;
+ }
+
+ .about .box .img img {
+     width: 240px;
+     border-radius: 50%;
+     margin-top: 55px;
  }
 
  .about .box .text {
-    flex: 2;
+     flex: 2;
+     margin-top: 78px;
+     margin-right: 40px;
  }
+
+ .about .box .text h3 {
+     color: var(--color-blue-2);
+     margin-top: 15px;
+ }
+
  .about .box .text p {
-  margin: 15px 0;
-  text-align: justify;
+     margin: 15px 0;
+     text-align: justify;
  }
+
  .about .box .text a {
-    color:var(--color-pink-1);
-    font-weight: 400;
+     color: var(--color-pink-1);
+     font-weight: 400;
 
-}
+ }
 
-@media(min-width: 768px){
-    .about .box {
-        flex-direction: row;
+ /* box skills */
 
-    }
-    .about .box .img img{
-        width: 100%;
-    }
-    .about .box .text{
-        padding-left: 40px;
-    } 
-    
-}
+ .skills {
+     background: var(--color-black-1);
+     min-height: 100vh;
+     margin-top: 50px;
+
+ }
+
+ .skills .skill i{
+    font-size: 60px;
+ }
+
+ .skills .box {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 65px 5px;
+ }
+
+ .skills .box h2,
+ .skills .box h3,
+ .skills .box h4 {
+     color: #fff
+ }
+
+ .skills .box h2 {
+     margin: 5px 0;
+     font-size: var(--font-size-2);
+     margin-top: 10px;
+     
+ }
+
+ .skills .box h3 {
+     margin:  0 20px;
+     font-size: var(--font-size-3);
+ }
+
+ .skills .box .items {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0 auto;
+     max-width: 900px;
+
+ }
+
+ .skills .box .items .skill {
+     width: 50%;
+     padding: 30px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+ }
+
+ .skills .box .items .skill:hover {
+     background: #ffffff1f;
+ }
+
+ .skills .box .items .skill img {
+     width: 120px;
+     height: auto;
+
+ }
+
+ .skills .box .items .skill h4 {
+     margin-top: 15px;
+ }
+
+ @media(min-width: 768px) {
+     .about .box {
+         flex-direction: row;
+
+     }
+
+     .about .box .img img {
+         width: 100%;
+     }
+
+     .about .box .text {
+         padding-left: 40px;
+     }
+
+     .skills .box .items .skill {
+         width: 25%;
+     }
+
+     .skills .box .items .skill img {
+         width: 120px;
+     }
+
+ }
