@@ -1,7 +1,7 @@
 export class Profile {
     name?: string;
     whatsApp?: string;
-    linkedIn?: string;
+    LinkedIn?: string;
     Email?: string;
     Instagran?: string;
 }
