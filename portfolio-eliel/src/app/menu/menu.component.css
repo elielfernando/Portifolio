@@ -10,7 +10,7 @@ nav {
 }
 
 nav ul {
-    display : flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -34,21 +34,26 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: var(--font-size-5);
+    font-size: var(--font-size-4);
+    text-decoration: none;
+    color: black;
 }
 
 nav ul li a:hover {
     color: var(--color-blue-2);
 }
+
 nav i {
     font-size: 45px;
     margin: 0 15px;
-        cursor: pointer;
+    cursor: pointer;
 }
+
 @media (min-width: 768px) {
-    nav{
+    nav {
         justify-content: center;
     }
+
     nav ul.open,
     nav ul.closed {
         display: flex;
@@ -57,7 +62,7 @@ nav i {
         top: 0;
     }
 
-    nav i{
+    nav i {
         display: none;
     }
 }
